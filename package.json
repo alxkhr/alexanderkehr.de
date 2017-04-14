@@ -1,0 +1,21 @@
+{
+  "name": "alexanderkehr.de",
+  "version": "0.0.1",
+  "description": "A personal website for myself.",
+  "main": "false",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxkhr/alexanderkehr.de.git"
+  },
+  "author": "Alexander Kehr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alxkhr/alexanderkehr.de/issues"
+  },
+  "homepage": "https://github.com/alxkhr/alexanderkehr.de#readme"
+}
