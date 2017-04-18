@@ -4,9 +4,17 @@
   "description": "A personal website for myself.",
   "main": "false",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "mustache": "^2.3.0",
+    "postcss-cli": "^3.1.1",
+    "postcss-cssnext": "^2.10.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist",
+    "postcss": "postcss templates/main.css -o dist/main.css",
+    "mustache": "mustache templates/content.json templates/index.mustache > dist/index.html",
+    "build": "mkdirp dist && npm run mustache && npm run postcss"
   },
   "repository": {
     "type": "git",

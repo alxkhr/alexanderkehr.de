@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="UTF-8">
+     <title>Title of the document</title>
+     <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <h1>{{header}}</h1>
+    {{#bug}}
+    {{/bug}}
+    <ul class="myClass">
+      {{#items}}
+        {{#first}}
+          <li><strong>{{name}}</strong></li>
+        {{/first}}
+        {{#link}}
+          <li><a href="{{url}}">{{name}}</a></li>
+        {{/link}}
+      {{/items}}
+    </ul>
+    {{#empty}}
+      <p>The list is empty.</p>
+    {{/empty}}
+  </body>
+</html>
