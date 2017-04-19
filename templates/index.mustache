@@ -6,33 +6,11 @@
      <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
-    <div class="landingpage">
-      <svg viewbox="0 0 744.09448819 1052.3622047">
-        {{#portrait}}
-        <path class="portrait-path {{className}}" d="{{d}}" />
-        {{/portrait}}
-      </svg>
-      <div class="title">{{title}}</div>
-    </div>
-    <div class="listentome">I love <span class="design">design</span> and <span class="development">development</span>.</div>
-    {{#followme}}
-    <div class="followme">
-      {{#links}}
-      <a href="{{link}}" target="_blank">
-        <svg viewbox="0 0 141.7325 141.7325">
-          <path d="{{d}}" />
-        </svg>
-      </a>
-      {{/links}}
-      <br/>
-      <p>{{label}}</p>
-    </div>
-    {{/followme}}
-    {{#contactme}}
-    <div class="contactme">
-      <p>{{story}}</p><br/>
-      <a href="{{link}}">{{label}}</a>
-    </div>
-    {{/contactme}}
+    {{#bug}}
+    {{/bug}}
+    {{#landingpage}}{{>landingpage}}{{/landingpage}}
+    {{#listentome}}{{>listentome}}{{/listentome}}
+    {{#followme}}{{>followme}}{{/followme}}
+    {{#contactme}}{{>contactme}}{{/contactme}}
   </body>
 </html>

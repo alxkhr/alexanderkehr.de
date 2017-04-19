@@ -160,8 +160,7 @@ a {
     font-size: 2rem;
 
     &:hover {
-      border: 1px solid var(--red);
-      border: none;
+      border-color: var(--red);
       background: var(--white);
       color: var(--grey);
     }
