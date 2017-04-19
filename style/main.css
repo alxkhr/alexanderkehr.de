@@ -6,7 +6,10 @@
   --blue: #8ab8e3;
   --quoteHeight: 4rem;
   --minWidth: 65rem;
+  --minDeviceWidth: 32.5rem;
 }
+
+@custom-media --small (width < 65rem);
 
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,100);
 
@@ -114,18 +117,12 @@ a {
 .landingpage {
   height: 100%;
   max-height: 100%;
-  min-width: var(--minWidth);
-  width: 100%;
   background: var(--red);
   overflow: hidden;
 
   & > svg {
     position: absolute;
     top: 50%;
-    /*left: 50px;
-    margin-top: -550px;
-    height: 1200px;
-    width: 848px;*/
     left: 4rem;
     margin-top: -34rem;
     height: 75rem;
@@ -145,6 +142,23 @@ a {
   }
 }
 
+@media (--small) {
+  .landingpage {
+    & > svg {
+      left: -4rem;
+      margin-top: -25rem;
+      height: 55rem;
+      width: 42rem;
+    }
+
+    & > .title {
+      font-size: 1.7rem;
+      margin-left: -6rem;
+    }
+  }
+}
+
+.landingpage,
 .listentome,
 .followme,
 .contactme {
@@ -154,6 +168,15 @@ a {
   background-clip: border-box;
 }
 
+@media (--small) {
+  .landingpage,
+  .listentome,
+  .followme,
+  .contactme {
+    min-width: var(--minDeviceWidth);
+  }
+}
+
 .listentome {
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -161,9 +184,9 @@ a {
   color: var(--white);
 
   & p {
+    width: var(--minWidth);
     height: 4rem;
     overflow: hidden;
-    width: var(--minWidth);
     font-size: 3rem;
     line-height: 4rem;
     white-space: nowrap;
@@ -174,7 +197,7 @@ a {
   & .quote {
     display: inline-block;
     text-align: left;
-    vertical-align: text-top;
+    vertical-align: top;
     animation: switch;
     animation-duration: 25000ms;
     animation-timing-function: linear;
@@ -187,6 +210,13 @@ a {
 
   & .development {
     color: var(--blue);
+  }
+}
+
+@media (--small) {
+  .listentome p {
+    width: var(--minDeviceWidth);
+    font-size: 1.5rem;
   }
 }
 
@@ -232,8 +262,10 @@ a {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    width: 35rem;
+    width: 45rem;
     white-space: pre-line;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   & > a {
@@ -250,6 +282,13 @@ a {
       background: var(--white);
       color: var(--grey);
     }
+  }
+}
+
+@media (--small) {
+  .contactme p {
+    width: var(--minDeviceWidth);
+    box-sizing: border-box;
   }
 }
 
