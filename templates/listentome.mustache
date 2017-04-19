@@ -1,1 +1,9 @@
-<div class="listentome">I love <span class="design">design</span> and <span class="development">development</span>.</div>
+<div class="listentome">
+  <p>
+    <span>I love </span>
+    <span class="quote">
+      {{#quotes}}
+      <span><span class="design">{{design}}</span> and <span class="development">{{development}}</span>.</span><br/>
+      {{/quotes}}
+    <span>
+</div>

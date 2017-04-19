@@ -29,24 +29,24 @@
   "listentome": {
     "quotes": [
       {
-        "design": [ "d", "e", "s", "i", "g", "n" ],
-        "development": [ "d", "e", "v", "e", "l", "o", "p", "m", "e", "n", "t" ]
+        "design": "design",
+        "development": "development"
       },
       {
-        "design": [ "c", "o", "n", "c", "e", "p", "t", "s" ],
-        "development": [ "i", "m", "p", "l", "e", "m", "e", "n", "t", "a", "t", "i", "o", "n", "s" ]
+        "design": "concepts",
+        "development": "implementations"
       },
       {
-        "design": [ "a", "n", "i", "m", "a", "t", "i", "o", "n", "s" ],
-        "development": [ "i", "n", "t", "e", "r", "a", "c", "t", "i", "o", "n", "s"]
+        "design": "animations",
+        "development": "interactions"
       },
       {
-        "design": [ "i", "c", "o", "n", "s"],
-        "development": [ "a", "l", "g", "o", "r", "i", "t", "h", "m", "s"]
+        "design": "icons",
+        "development": "algorithms"
       },
       {
-        "design": [ "a", "r", "t" ],
-        "development": [ "c", "o", "d", "e" ]
+        "design": "art",
+        "development": "code"
       }
     ]
   },
