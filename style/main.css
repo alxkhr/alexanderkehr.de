@@ -198,6 +198,13 @@ a {
     display: inline-block;
     text-align: left;
     vertical-align: top;
+  }
+
+  & .design,
+  .and,
+  .development,
+  .dot {
+    display: inline-block;
     animation: switch;
     animation-duration: 25000ms;
     animation-timing-function: linear;
@@ -205,11 +212,21 @@ a {
   }
 
   & .design {
+    animation-delay: 50ms;
     color: var(--green);
   }
 
+  & .and {
+    animation-delay: 100ms;
+  }
+
   & .development {
+    animation-delay: 150ms;
     color: var(--blue);
+  }
+
+  & .dot {
+    animation-delay: 200ms;
   }
 }
 
