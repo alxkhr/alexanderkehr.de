@@ -114,6 +114,12 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
 .landingpage {
   height: 100%;
   max-height: 100%;
