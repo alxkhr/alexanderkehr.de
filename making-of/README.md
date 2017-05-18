@@ -14,11 +14,11 @@ The initial eye-catching animation is the only excemption from this small-and-si
 
 If someone intents to imitate this, here are the steps:
 
-    - take a nice picture
-    - draw over it with the vector tool of your choice (i.e. Inkscape)
-    - generate svg elements and css classes (write small script or [use mine](./generateJsonAndCss.py))
-    - include it in your website code
-    - add an animation
+- take a nice picture
+- draw over it with the vector tool of your choice (i.e. Inkscape)
+- generate svg elements and css classes (write small script or [use mine](./generateJsonAndCss.py))
+- include it in your website code
+- add an animation
 
 ```css
 @keyframes appear {
@@ -39,7 +39,7 @@ If someone intents to imitate this, here are the steps:
 }
 ```
 
-    - generate some distinct animation-delay for every svg element
+- generate some distinct animation-delay for every svg element
 
 ## Static Languages and Templates
 
