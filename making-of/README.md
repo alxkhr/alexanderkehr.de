@@ -20,24 +20,24 @@ If someone intents to imitate this, here are the steps:
     - include it in your website code
     - add an animation
 
-    ```css
-    @keyframes appear {
-      0% {
-        fill-opacity: 0;
-        stroke-opacity: 0;
-      }
+```css
+@keyframes appear {
+  0% {
+    fill-opacity: 0;
+    stroke-opacity: 0;
+  }
 
-      10% {
-        fill-opacity: 0;
-        stroke-opacity: 1;
-      }
+  10% {
+    fill-opacity: 0;
+    stroke-opacity: 1;
+  }
 
-      100% {
-        fill-opacity: 1;
-        stroke-opacity: 0;
-      }
-    }
-    ```
+  100% {
+    fill-opacity: 1;
+    stroke-opacity: 0;
+  }
+}
+```
 
     - generate some distinct animation-delay for every svg element
 
