@@ -12,30 +12,33 @@ I try to be smarter now, so i made it small and simple this time.
 
 The initial eye-catching animation is the only excemption from this small-and-simple approach.
 
-If someone intents to imitate this, here are the steps
+If someone intents to imitate this, here are the steps:
+
     - take a nice picture
     - draw over it with the vector tool of your choice (i.e. Inkscape)
     - generate svg elements and css classes (write small script or [use mine](./generateJsonAndCss.py))
     - include it in your website code
     - add an animation
-```css
-@keyframes appear {
-  0% {
-    fill-opacity: 0;
-    stroke-opacity: 0;
-  }
 
-  10% {
-    fill-opacity: 0;
-    stroke-opacity: 1;
-  }
+    ```css
+    @keyframes appear {
+      0% {
+        fill-opacity: 0;
+        stroke-opacity: 0;
+      }
 
-  100% {
-    fill-opacity: 1;
-    stroke-opacity: 0;
-  }
-}
-```
+      10% {
+        fill-opacity: 0;
+        stroke-opacity: 1;
+      }
+
+      100% {
+        fill-opacity: 1;
+        stroke-opacity: 0;
+      }
+    }
+    ```
+
     - generate some distinct animation-delay for every svg element
 
 ## Static Languages and Templates
