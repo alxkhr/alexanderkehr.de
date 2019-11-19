@@ -1,21 +1,29 @@
 {
   "name": "alexanderkehr.de",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "description": "A personal website for myself.",
-  "main": "false",
-  "dependencies": {},
-  "devDependencies": {
-    "mkdirp": "^0.5.1",
-    "mustache": "^2.3.0",
-    "postcss-cli": "^3.1.1",
-    "postcss-cssnext": "^2.10.0",
-    "precss": "^1.4.0"
-  },
+  "private": true,
   "scripts": {
-    "clean": "rm -rf dist",
-    "postcss": "postcss style/main.css -o dist/main.css",
-    "mustache": "mustache -p templates/landingpage.mustache -p templates/listentome.mustache -p templates/followme.mustache -p templates/contactme.mustache content/content.json templates/index.mustache > dist/index.html",
-    "build": "mkdirp dist && npm run mustache && npm run postcss"
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "autoprefixer": "^9.7.2",
+    "babel-loader": "^8.0.6",
+    "browserslist": "^4.7.3",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.5",
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "terser-webpack-plugin": "^2.2.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "bowser": "^2.7.0"
   },
   "repository": {
     "type": "git",
@@ -26,5 +34,5 @@
   "bugs": {
     "url": "https://github.com/alxkhr/alexanderkehr.de/issues"
   },
-  "homepage": "https://github.com/alxkhr/alexanderkehr.de#readme"
+  "homepage": "https://alexanderkehr.de"
 }

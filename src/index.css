@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: monospace, sans-serif;
+}
+
+* {
+  position: relative;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 400px;
+  min-width: 400px;
+}
+
+.emoji {
+  font-family: 'emoji';
+  font-size: 100px;
+}
+
+.text {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.4em;
+  margin: 20px 0;
+  max-width: 350px;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  line-height: 1.3em;
+  max-width: 400px;
+  flex: 0 0 auto;
+}
+
+.paragraph > * {
+  display: block;
+  margin: 20px 0;
+}
+
+.link {
+  font-size: 1rem;
+  color: #0086e6;
+}
+
+.link:hover {
+  color: #3daeff;
+}
+
+.button {
+  margin: 20px 0;
+  padding: 0 20px;
+  height: 3em;
+  background: #ff4a19;
+  line-height: 3em;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 3px;
+  box-shadow: 5px 5px #000;
+}
+
+.placeholder {
+  margin: 20px 0;
+  height: 3em;
+  border: 1px solid transparent;
+}
+
+.validation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #fffb0b;
+  text-align: center;
+  padding: 10px 0;
+}
