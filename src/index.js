@@ -28,49 +28,34 @@ function tempHideGetBrowserButton() {
 }
 
 function renderWowTorText(container) {
-  container.style.justifyContent = 'start';
-  const element = document.createElement('div');
-  element.className = css.paragraph;
   const privacyText = document.createElement('p');
+  privacyText.className = css.paragraph;
   privacyText.innerText = shiftString(
     '\\t|1%fwj%~tz%zxnsl%f%Ytw%Gwt|xjwD%^tz%rzxy%gj%wjfqq~%htshjwsji%fgtzy%~tzw%uwn{fh~&%Xt%fr%N3',
     -5,
   );
-  element.appendChild(privacyText);
+  container.appendChild(privacyText);
   const forgiveText = document.createElement('p');
+  forgiveText.className = css.paragraph;
   forgiveText.innerText = shiftString(
     'Rngcug"hqtikxg"og"hqt"hknvgtkpi"qwv"vjg"xkukvqtu"qh"o{"rgtuqpcn"rtqhkngu"cpf"eqpvcev"fgvcknu0',
     -2,
   );
-  element.appendChild(forgiveText);
-  [
-    'iuuqt;00mjolfejo/dpn0jo0bmfyboefs.lfis',
-    'jvvru<11ikvjwd0eqo1cnzmjt',
-    'kwwsv=22jolwfk1frp2Cdo{nku',
-    'lxxtw>33filergi2rix3ep|olv',
-    'myyux?44nsxyflwfr3htr4fqj}fpjm',
-  ].forEach((l, i) => {
-    const profileLink = document.createElement('a');
-    const link = shiftString(l, -i - 1);
-    profileLink.className = css.link;
-    profileLink.href = link;
-    profileLink.target = '_blank';
-    profileLink.innerText = link;
-    element.appendChild(profileLink);
-  });
-  const disclaimerText = document.createElement('p');
-  disclaimerText.innerText = shiftString(
-    ')Tpnf!pg!uif!mjolt!xjmm!opu!xpsl!qspqfsmz-!cfdbvtf!uif!qmbugpsn!epft!opu!sftqfdu!zpvs!qsjwbdz/!Jg!zpv!xbou!up!wjtju!bmm!uif!qspgjmft-!zpv!njhiu!ibwf!up!vtf!b!dpnnpo!cspxtfs/*',
-    -1,
-  );
-  element.appendChild(disclaimerText);
+  container.appendChild(forgiveText);
+  const resumeButton = document.createElement('a');
+  resumeButton.href = shiftString('iuuqt;00sftvnf/bmfyboefslfis/dpn', -1);
+  resumeButton.target = '_blank';
+  resumeButton.innerText = shiftString('O["TGUWOG', -2);
+  resumeButton.className = css.button;
+  container.appendChild(resumeButton);
   const mailText = document.createElement('p');
+  mailText.className = css.paragraph;
   mailText.innerText = shiftString('doh{Cdoh{dqghunhku1gh', -3);
-  element.appendChild(mailText);
+  container.appendChild(mailText);
   const phoneText = document.createElement('p');
+  phoneText.className = css.paragraph;
   phoneText.innerText = shiftString('1:?&7;=;&>7;>:;>', -6);
-  element.appendChild(phoneText);
-  container.appendChild(element);
+  container.appendChild(phoneText);
 }
 
 function renderSorryBrowserText(container) {
@@ -110,7 +95,10 @@ function maybeRenderBadUXText(container) {
   const mailtoLink = document.createElement('a');
   mailtoLink.className = css.link;
   mailtoLink.innerText = shiftString('Ufmm!nf/', -1);
-  mailtoLink.href = shiftString('qempxs>epi|Depi|erhivoilv2hi', -4);
+  mailtoLink.href = shiftString(
+    'qempxs>epi|Depi|erhivoilv2hiCwyfnigxAM$lezi$gsrgivrw${mxl$xli$eggiwwmfmpmx}$sj$}syv${ifwmxi',
+    -4,
+  );
   element.appendChild(mailtoLink);
   container.appendChild(element);
 }
