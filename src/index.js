@@ -131,13 +131,13 @@ function render() {
       renderWowTorText(container);
       break;
     case 1:
-      renderEmoji(container, 128531);
+      renderEmoji(container, 128542);
       renderSorryBrowserText(container);
       renderGetBrowserButton(container);
       maybeRenderBadUXText(container);
       break;
     case 2:
-      renderEmoji(container, 128539);
+      renderEmoji(container, 128579);
       renderSorryBrowserText(container);
       renderButtonPlaceholder(container);
       maybeRenderBadUXText(container);
