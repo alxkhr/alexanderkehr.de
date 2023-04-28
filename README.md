@@ -1,5 +1,7 @@
 # alexanderkehr.de
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/77804281-c675-485a-a825-b8b816ee94b2/deploy-status)](https://app.netlify.com/sites/alexanderkehr/deploys)
+
 ## Actual Version
 
 Replaced my well-thought-through profile page with a sarcastic, unrelevant piece of art.
