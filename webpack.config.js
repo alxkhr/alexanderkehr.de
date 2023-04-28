@@ -2,7 +2,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -39,9 +39,13 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.css'],
   },
-  plugins: [new CleanWebpackPlugin(), new CopyPlugin(['res']), new MiniCssExtractPlugin()],
+  plugins: [
+    new CleanWebpackPlugin(),
+    new CopyPlugin({ patterns: ['res'] }),
+    new MiniCssExtractPlugin(),
+  ],
   optimization: {
     minimize: true,
-    minimizer: [new TerserPlugin(), new OptimizeCSSAssetsPlugin()],
+    minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
   },
 };
